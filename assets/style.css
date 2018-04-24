@@ -25,3 +25,16 @@ body {
 h1, h2, h4 {
     text-align: center;
 }
+
+h1 {
+    margin: auto;
+}
+
+img {
+    margin:auto;
+    margin-bottom: 15px;
+}
+
+.numButton {
+    margin-bottom: 15px;
+}
