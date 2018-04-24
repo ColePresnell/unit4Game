@@ -21,6 +21,9 @@ var crystalValue = 0;
 var wins = 0;
 var losses = 0;
 
+$("#counterTotal").text(crystalValue);
+$("#numberWins").text(wins);
+$("#numberLosses").text(losses);
 
 //create crystals with values ranging from 1-12, assigned randomly
 
@@ -47,6 +50,20 @@ $(document).on("click", ".classOne", function () {
     $("#one").addClass("newCrystalOne");
     crystalValue += crystalOne;
     console.log(crystalOne);
+
+    // Conditional that identifies whether the user has hit the target number and wins, or goes over the target number and loses
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
     
 });
 
@@ -55,6 +72,18 @@ $(document).on("click", ".newCrystalOne", function () {
     crystalValue += crystalOne;
     console.log(crystalOne);
     console.log(crystalValue);
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
 });
 
 //Doing the same random number function for crystal two that we did for the first crystal
@@ -67,6 +96,17 @@ $(document).on("click", ".classTwo", function () {
     console.log(crystalTwo);
     console.log(crystalValue);
     
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
     
 });
 
@@ -75,6 +115,18 @@ $(document).on("click", ".newCrystalTwo", function () {
     crystalValue += crystalTwo;
     console.log(crystalTwo);
     console.log(crystalValue);
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
 });
 
 //Doing the same random number function for crystal three that we did for the others
@@ -87,6 +139,17 @@ $(document).on("click", ".classThree", function () {
     console.log(crystalThree);
     console.log(crystalValue);
     
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
     
 });
 
@@ -95,6 +158,18 @@ $(document).on("click", ".newCrystalThree", function () {
     crystalValue += crystalThree;
     console.log(crystalThree);
     console.log(crystalValue);
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
 });
 
 //Doing the same random number function for crystal four that we did for the other
@@ -106,8 +181,18 @@ $(document).on("click", ".classFour", function () {
     crystalValue += crystalFour;
     console.log(crystalFour);
     console.log(crystalValue);
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
     
-    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
 });
 
 // Allowing crystal four to add to the running total by adding the same number after the first click.
@@ -115,16 +200,19 @@ $(document).on("click", ".newCrystalFour", function () {
     crystalValue += crystalFour;
     console.log(crystalFour);
     console.log(crystalValue);
+
+    if (crystalValue == targetNumber) {
+        alert("You win!!");
+        wins++;
+        console.log(wins);
+    }
+    
+    else if (crystalValue > targetNumber) {
+        alert("You lose!!!");
+        losses++;
+        console.log(losses);
+    };
 });
 
 
-// Conditional that identifies whether the user has hit the target number and wins, or goes over the target number and loses
-if (crystalValue === targetNumber) {
-    alert("You win!!");
-    wins++;
-}
 
-else if (crystalValue > targetNumber) {
-    alert("You lose!!!");
-    losses++;
-};
