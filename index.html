@@ -18,48 +18,62 @@
 </head>
 
 <body>
-    <div class="row">
-        <h1>Welcome to The Crystal Game!</h1>
+    <div class="container">
+        <div class="row">
+            <h1>Welcome to The Crystal Game!</h1>
+        </div>
+        <div class="row">
+            <h2>Number to guess:
+                <span id="numberToGuess"></span>
+            </h2>
+
+        </div>
+        <div class="row">
+            <button class="numButton">
+                Click me for a new game
+            </button>
+        </div>
+        <div class="row">
+        <img src="assets/images/blueCrystal.jpg" class="classOne" id="one" alt="Blue Crystal">
+
+        </img>
+
+        <img src="assets/images/darkCrystal.jpg" class="classTwo" id="two" alt="Dark Crystal">
+        </img>
+
+        <img src="assets/images/greenCrystal.jpg" class="classThree" id="three" alt="Green Crystal">
+        </img>
+
+        <img src="assets/images/yellowCrystal.jpg" class="classFour" id="four" alt="Yellow Crystal">
+        </img>
     </div>
-    <div class="row">
-        <h2>Number to guess:
-            <span id="numberToGuess"></span>
-        </h2>
-
+        <div class="counter">
+            <h2>Current total:
+                <span id="counterTotal"></span>
+            </h2>
+        </div>
+        <div class="winsAndLosses">
+            <h2>Wins:
+                <span id="numberWins"></span>
+                </br>
+                Losses:
+                <span id="numberLosses"></span>
+            </h2>
+        </div>
+        <div>
+            <h4>INSTRUCTIONS:</h4>
+            <ol>
+                    <li>You will be given a random number at the start of the game after clicking on the button.</li>
+                    <li>There are four crystals below.</li>
+                    
+                    <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the random number.</li>
+                    <li>You lose the game if your total score goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                </ol>
+        </div>
     </div>
-
-    <div class="row" id="crystals">
-
-    </div>
-
-    <button class="numButton">
-        Click me for a new number
-    </button>
-
-    <img src="assets/images/blueCrystal.jpg" class="classOne" id="one" alt="Blue Crystal">
-
-    </img>
-
-    <img src="assets/images/darkCrystal.jpg" class="classTwo" id="two" alt="Dark Crystal">
-    </img>
-
-    <img src="assets/images/greenCrystal.jpg" class="classThree" id="three" alt="Green Crystal">
-    </img>
-
-    <img src="assets/images/yellowCrystal.jpg" class="classFour" id="four" alt="Yellow Crystal">
-    </img>
-
-    <div class="counter">
-        <h2>Current total: <span id="counterTotal"></span></h2>
-    </div>
-    <div class="winsAndLosses">
-        <h2>Wins:
-            <span id="numberWins"></span>
-            </br>
-            Losses:
-            <span id="numberLosses"></span>
-        </h2>
-
 
 </body>
 
